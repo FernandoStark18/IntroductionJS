@@ -20,8 +20,8 @@ console.log(++puntaje);
 
 // Decrementos
 
-let puntaje = 10;
-puntaje--;
+let puntaje2 = 10;
+puntaje2--;
 
-console.log(puntaje--);
-console.log(--puntaje);
+console.log(puntaje2--);
+console.log(--puntaje2);
