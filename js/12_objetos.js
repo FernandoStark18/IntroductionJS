@@ -1,9 +1,5 @@
 // Objetos
 
-const productName = "Monitor 20\"";
-const price = 300;
-const available = true;
-
 const product = {
     productName: "Monitor 20\"",
     price: 300,
@@ -12,4 +8,12 @@ const product = {
 
 console.log(product);
 
-console.log(`Nombre del producto: ${product.productName}, Precio: ${product.price}, Disponibilidad: ${product.available}`);
+// console.log(`Nombre del producto: ${product.productName}, Precio: ${product.price}, Disponibilidad: ${product.available}`);
+
+// Agregar propiedades
+product.image = "image.jpg";
+console.log(product);
+
+// Eliminar propiedades
+delete product.available;
+console.log(product);
