@@ -22,4 +22,3 @@ console.log(`Subtotal: ${total}`);
 
 const totalAPagar = calcularImpuesto(total);
 console.log(`Total: ${totalAPagar}`);
-
