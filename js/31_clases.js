@@ -20,3 +20,24 @@ const producto2 = new Producto('Laptop', 100);
 
 console.log(producto.formatearProducto());
 console.log(producto2.obtenerPrecio());
+
+// Herencia
+class Libro extends Producto {
+    constructor(nombre, precio, isbn) {
+        super(nombre, precio);
+        this.isbn = isbn;
+    }
+
+    formatearProducto() {
+        return `${super.formatearProducto()} y su ISBN es ${this.isbn}`;
+    }
+
+    obtenerPrecio() {
+        return `${super.obtenerPrecio()}`
+    }
+}
+
+const libro = new Libro('JavaScript la revolución', 120, '910313981389139');
+
+console.log(libro.formatearProducto());
+console.log(libro.obtenerPrecio());
